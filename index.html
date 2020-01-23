@@ -14,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Anton|Satisfy|Alata|Poppins|Quicksand|Ibarra+Real+Nova&display=swap" rel="stylesheet">
 	
 </head>
-<body>
+<body class="bg-black">
 	<div id="header">
 		<div class="nava nava-abs container-fluid px-0 py-4">
 			<nav class="navbar navbar-expand-md justify-content-between py-0 text-light">
@@ -50,9 +50,9 @@
 			    	</li>
 			   </ul>
 			   <div>
-		  	 	   <ul class="navbar-nav">
+		  	 	   <ul class="navbar-nav right-side-menu">
 			      	<li class="nav-item">
-			        		<a class="nav-link text-danger" href="#">
+			        		<a class="nav-link text-info" href="#">
 			        			<i class="fas fa-search"></i>
 			        		</a>
 			      	</li>
@@ -76,10 +76,10 @@
 					<img class="d-block w-100" src="./assets/images/computer2.jpg" alt="First slide">
 				</div>
 				<div class="carousel-item">			
-					<img class="d-block w-100" src="./assets/images/computer2.jpg" alt="Second slide">
+					<img class="d-block w-100" src="./assets/images/computer.jpg" alt="Second slide">
 				</div>
 				<div class="carousel-item">			
-					<img class="d-block w-100" src="./assets/images/computer2.jpg" alt="Third slide">
+					<img class="lion d-block w-100" src="./assets/images/shark.jpg" alt="Third slide">
 				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselSlider" role="button" data-slide="prev">
@@ -93,17 +93,17 @@
 		</div>
 		<div class="header-title">
 			<div class="header-title-text w-50 text-center text-light">
-				<h1>Lorem ipsum dolor.</h1>
+				<h1 class="pb-4">Lorem ipsum dolor.</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>	
-				<button class="btn btn-lg btn-rounded btn-outline-light">Lorem</button>
+				<a class="btn btn-lg btn-light mt-4" style="border-radius: 100px;color: black;">Lorem ipsum</a>
 			</div>
 			
 		</div>		
 		<div class="blacker"></div>		
 	</div>
-	<div class="container py-5 aboutme-box">
+	<div class="container py-5 aboutme-box text-light">
 		<h1 class="text-center my-3">About Me</h1>
 		<div class="row">
 			<div class="col-md-6">
@@ -123,20 +123,91 @@
 			</div>		
 		</div>
 	</div>
-	<div class="container-fluid bg-light py-4">
+	<div class="w-100 bg-darker py-5">
 		<div class="container">
-			<h1 class="text-center">My Specialties</h1>
-			<div class="row">
-				
+			<div class="row text-light">
+				<div class="col-md-4 text-center">
+					<p class="display-4">999+</p>
+					<a href=""><h4 class="text-muted">Project</h4></a>
+				</div>
+				<div class="col-md-4 text-center">
+					<p class="display-4">99</p>
+					<h4 class="text-muted">On Progress</h4>
+				</div>
+				<div class="col-md-4 text-center">
+					<p class="display-4">99%</p>
+					<h4 class="text-muted">Success Rate</h4>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid bg-light py-5"></div>
-	<div class="container-fluid bg-light py-5"></div>
-	<div class="container-fluid bg-light py-5"></div>
-	<div class="container-fluid bg-light py-5"></div>
-	<div class="container-fluid bg-light py-5"></div>
-
+	<div class="w-100 bg-light py-5">
+		<div class="container">
+			<h1 class="text-center pt-4 mb-5">My Recent Work</h1>
+			<div class="row mt-4">
+				<div class="col-sm-3">
+					<a href="#work" class="work-item">
+						<img class="h-100" src="assets/images/computer2.jpg">
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#work" class="work-item">
+						<img class="h-100" src="assets/images/computer.jpg">
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#work" class="work-item">
+						<img class="h-100" src="assets/images/computer2.jpg">
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#work" class="work-item">
+						<img class="h-100" src="assets/images/computer2.jpg">
+					</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div id="gallery" class="w-100 bg-black py-5 text-light">
+		<h1 class="text-center pt-4 mb-4">My Galleries</h1>
+		<div class="row mt-5">
+			<div class="col-sm-3">
+				<a href="#gallery" class="gallery-item">
+					<img class="w-100" src="assets/images/lion.jpg">
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#gallery" class="gallery-item">
+					<img class="w-100" src="assets/images/lion.jpg">
+				</a>
+			</div>
+			<div class="col-sm-6">
+				<a href="#gallery" class="gallery-item">
+					<img class="w-100 h-100" src="assets/images/shark.jpg">
+				</a>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-sm-4">
+				<a href="#gallery" class="gallery-item">
+					<img class="h-100" src="assets/images/computer2.jpg">
+				</a>
+			</div>
+			<div class="col-sm-4">
+				<a href="#gallery" class="gallery-item">
+					<img class="h-100" src="assets/images/computer.jpg">
+				</a>
+			</div>
+			<div class="col-sm-4">
+				<a href="#gallery" class="gallery-item">
+					<img class="h-100" src="assets/images/computer2.jpg">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		
+	</div>
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<!-- Popper JS -->
@@ -150,12 +221,13 @@
 		$(document).ready(function() {
 			$('.carousel').carousel();
 			$(window).scroll(function() {
+				var navbar = 100;
 				var scroll = $(window).scrollTop();
-				if (scroll > 400) {
-					$('.nava').addClass('sticky').removeClass('nava-abs');
+				if (scroll > navbar) {
+					$('.nava').addClass('sticky-header').removeClass('nava-abs').removeClass('py-4');
 				}
 				else {
-					$('.nava').removeClass('sticky').addClass('nava-abs');	
+					$('.nava').removeClass('sticky-header').addClass('nava-abs').addClass('py-4');	
 				}
 			});
 		});
