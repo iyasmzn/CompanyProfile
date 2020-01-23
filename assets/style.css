@@ -17,7 +17,7 @@ html, body {
 }
 a:hover, a:active, a:focus {
 	outline: 0;
-	text-decoration: none;
+	text-decoration: none!important;
 }
 h1, h2, h3, h4, h5 {
 	font-weight: bold;
@@ -167,4 +167,12 @@ p {
 	background: black;
 	display: block;
 	position: relative;
+}
+.count-hover h4 {
+	color: lightgray!important;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter!important;
+}
+.count-hover:hover h4 {
+	color: skyblue!important;
 }
