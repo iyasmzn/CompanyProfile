@@ -14,7 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Anton|Satisfy|Alata|Poppins|Quicksand|Ibarra+Real+Nova&display=swap" rel="stylesheet">
 	
 </head>
-<body class="bg-black">
+<body class="bg-darker">
 	<div id="header">
 		<div class="nava nava-abs container-fluid px-0 py-4">
 			<nav class="navbar navbar-expand-md justify-content-between py-0 text-light">
@@ -91,8 +91,8 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		<div class="header-title">
-			<div class="header-title-text w-50 text-center text-light">
+		<div class="header-title w-50">
+			<div class="header-title-text w-100 text-center text-light">
 				<h1 class="pb-4">Lorem ipsum dolor.</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -101,9 +101,9 @@
 			</div>
 			
 		</div>		
-		<div class="blacker"></div>		
+		<div class="blacker-header"></div>		
 	</div>
-	<div class="container py-5 aboutme-box text-light">
+	<div class="container py-5 aboutme-box text-light bg-darker">
 		<h1 class="text-center my-3">About Me</h1>
 		<div class="row">
 			<div class="col-md-6">
@@ -123,7 +123,7 @@
 			</div>		
 		</div>
 	</div>
-	<div class="w-100 bg-darker py-5" id="count">
+	<div class="w-100 bg-black py-5" id="count">
 		<div class="container">
 			<div class="row text-light">
 				<div class="col-md-4 text-center">
@@ -141,34 +141,40 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-100 bg-light py-5">
-		<div class="container">
+	<div class="w-100 bg-transparent py-5" id="work">
+		<div class="container text-light">
 			<h1 class="text-center pt-4 mb-5">My Recent Work</h1>
-			<div class="row mt-4">
-				<div class="col-sm-3">
-					<a href="#work" class="work-item">
+			<div class="row mt-4 text-center">
+				<div class="col-sm-6 work-box-hover mb-3 pt-3 bg-darkerer">
+					<a href="#work" class="work-item mb-2">
 						<img class="h-100" src="assets/images/computer2.jpg">
+						<div class="work-image-hover"></div>
 					</a>
+					<a class="a-for-work-hover" href="#work">Work 1</a>
+					<p class="text-muted">identify</p>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-6 work-box-hover mb-3 pt-3 bg-darkerer">
 					<a href="#work" class="work-item">
 						<img class="h-100" src="assets/images/computer.jpg">
 					</a>
+					<h4 class="pt-4">Work 1</h4>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-6 work-box-hover bg-darkerer pt-3">
 					<a href="#work" class="work-item">
 						<img class="h-100" src="assets/images/computer2.jpg">
 					</a>
+					<h4 class="py-4">Work 1</h4>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-sm-6 work-box-hover bg-darkerer pt-3">
 					<a href="#work" class="work-item">
 						<img class="h-100" src="assets/images/computer2.jpg">
 					</a>
+					<h4 class="text-center py-4">Work 1</h4>
 				</div>
 			</div>	
 		</div>
 	</div>
-	<div id="gallery" class="w-100 bg-black py-5 text-light">
+	<div id="gallery" class="w-100 bg-transparent py-5 text-light">
 		<h1 class="text-center pt-4 mb-4">My Galleries</h1>
 		<div class="row mt-5" style="margin-right: 0;margin-left: 0;">
 			<div class="col-sm-3">
@@ -218,10 +224,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
 	<!-- My Javascript -->
 	<script type="text/javascript">
-		$(document).ready(function() {
+		var jQ = jQuery.noConflict();
+		jQ(document).ready(function() {
 			$('.carousel').carousel();
 			$(window).scroll(function() {
-				var navbar = 100;
+				var navbar = $('.nava').offset().top;
 				var scroll = $(window).scrollTop();
 				if (scroll > navbar) {
 					$('.nava').addClass('sticky-header').removeClass('nava-abs').removeClass('py-4');
