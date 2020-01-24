@@ -238,7 +238,7 @@ p {
 #gallery {
 	background: url('images/batik_black.jpg');
 	background-size: cover;
-	border-radius: 0px 100px 100px 0px;
+	border-radius: 0px 100px 0px 100px;
 }
 .gallery-box {
 	overflow: hidden;
@@ -271,10 +271,19 @@ p {
 	background-image: url('images/shark.jpg');	
 }
 .gallery-image-6 {
-	background-image: url('images/lion.jpg');	
+	background-image: url('../../../dashboard/image/epin.JPG');	
+	/*background-image: url('../../../dashboard/image/Iyas.JPG');	*/
+	transform: rotate(-90deg);
+	top: 0;
+	transition: top 2s!important, transform 1s ease!important;
 }
 .gallery-image-7 {
-	background-image: url('images/lion.jpg');	
+	background-image: url('images/Rubick Abstract.jpg');	
+}
+.gallery-box:hover .gallery-image-6	{
+	position: absolute;
+	transform: scale(2) rotate(-95deg)!important;
+	top: 200px;
 }
 .gallery-box:hover [class*='gallery-image'] {
 	transform: scale(1.4) rotate(5deg);
@@ -291,12 +300,23 @@ p {
 .gallery-icon {
 	position: absolute;
 	opacity: 0;
-	bottom: 40px;right: 20px;
+	bottom: 40px;
 	z-index: 20;	
 	transition: all 0.5s;
 }
 .gallery-icon-left {
 	left: 20px;
+}
+.gallery-tag {
+	font-size: 0.8em;
+	color: gray;	
+}
+.gallery-icon-right {
+	right: 20px;
+}
+.gallery-icon-view {
+	right: 50%;
+	transform: translateX(50%);
 }
 .gallery-box:hover {
 	border-color: white;
