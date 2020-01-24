@@ -238,6 +238,7 @@ p {
 #gallery {
 	background: url('images/batik_black.jpg');
 	background-size: cover;
+	border-radius: 0px 100px 100px 0px;
 }
 .gallery-box {
 	overflow: hidden;
@@ -245,6 +246,7 @@ p {
 	position: relative;
 	border: 5px solid rgba(0,0,0,0.5);
 	transition: border-color 1.5s;
+	border-radius: 15px;
 }
 [class*='gallery-image'] {
 	width: 100%;
