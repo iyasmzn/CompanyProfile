@@ -30,6 +30,12 @@ h1, h2, h3, h4, h5 {
 p {
 	font-family: 'Quicksand', sans-serif;
 }
+.quicksand {
+	font-family: 'Quicksand', sans-serif;
+}
+.px-6 {
+	padding: 0px 10%!important;
+}
 #header {
 	position: relative;
 }
@@ -327,4 +333,73 @@ p {
 }
 .gallery-box:hover .gallery-title {
 	top: 0px;
+}
+#recent .row {
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0.2);
+	position: relative;
+}
+.recent-box {
+	overflow: hidden;
+	height: 15vw;
+	position: relative;
+} 
+[class*='recent-image'] {
+	background-size: cover!important;	
+	background-position: center!important;
+}
+.recent-image-1 {
+	background: url('images/computer.jpg');
+}
+.recent-tag {
+	width: 100%;
+	position: absolute;
+	bottom: -60px;left: 0;
+	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
+	transition: all 1s;
+}
+.recent-info {
+	font-size: 0.8em;
+	font-family: monospace;
+	letter-spacing: -1px;
+	padding: 5px;
+}
+.recent-view {
+	position: absolute;
+	left: 50%;bottom: 40px;
+	transform: translateX(-50%);
+	text-align: center;
+	transition: all 1s;
+	opacity: 0;
+}
+.recent-box:hover [class*='recent-image'] {
+	transform: scale(1.5);
+}
+.recent-box:hover .recent-tag {
+	opacity: 1;
+	bottom: 0;
+}
+.recent-box:hover .recent-view {
+	opacity: 1;
+	bottom: 100px;
+}
+.slider-circle {
+	position: absolute;
+	top: 100%;left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+}
+.popular-img {
+	width: 30%;
+	height: 5vw;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+}
+.popular-img img {
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
