@@ -188,6 +188,12 @@ p {
 	line-height: 1.6;
 	text-indent: 50px;
 }
+.about-me-img {
+	background-image: url('https://images.unsplash.com/photo-1574296485283-05828992d106?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+	background-size: cover;
+	background-position: center;
+	border-radius: 5px 50px 5px 5px;
+}
 .work-item {
 	overflow: hidden;
 	height: 35vw;
@@ -204,7 +210,7 @@ p {
 	color: skyblue;
 }
 .work-box-hover {
-	border-radius: 0px 0px 5px 5px;
+	border-radius: 5px;
 	-webkit-transition: all 0.25s;
 	   -moz-transition: all 0.25s;
 	    -ms-transition: all 0.25s;
@@ -262,29 +268,28 @@ p {
 	transition: all 1s ease;
 }
 .gallery-image-1 {
-	background-image: url('images/lion.jpg');	
+	background-image: url('https://images.unsplash.com/photo-1574322401425-9510707bcc34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');	
 }
 .gallery-image-2 {
-	background-image: url('images/computer2.jpg');	
+	background-image: url('https://images.unsplash.com/photo-1572151812893-c73c8ca1dacd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80');	
 }
 .gallery-image-3 {
-	background-image: url('../../../dashboard/image/wallpaper_city.jpg');	
+	background-image: url('https://images.unsplash.com/photo-1560332944-d047e59ac9b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');	
 }
 .gallery-image-4 {
-	background-image: url('images/computer.jpg');	
+	background-image: url('https://images.unsplash.com/flagged/photo-1575924821233-4ea468efb76e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');	
 }
 .gallery-image-5 {
-	background-image: url('images/shark.jpg');	
+	background-image: url('https://images.unsplash.com/flagged/photo-1574003854725-ef1e2b796f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');	
 }
 .gallery-image-6 {
-	background-image: url('../../../dashboard/image/epin.JPG');	
-	/*background-image: url('../../../dashboard/image/Iyas.JPG');	*/
+	/*background-image: url('../../../dashboard/image/epin.JPG');	*/
 	transform: rotate(-90deg);
 	top: 0;
 	transition: top 2s!important, transform 1s ease!important;
 }
 .gallery-image-7 {
-	background-image: url('images/Rubick Abstract.jpg');	
+	background-image: url('https://images.unsplash.com/photo-1571497569639-7bd0fcd36c64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');	
 }
 .gallery-box:hover .gallery-image-6	{
 	position: absolute;
@@ -402,4 +407,24 @@ p {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+/* RESPONSIVE */
+.nava-mobile {
+	position: absolute;
+	z-index: 100;
+	right: 50px;
+	top: -50px;
+	opacity: 0;
+	font-size: 2em;
+	transition: all 1s;
+}
+@media only screen and ( max-width: 760px ) {
+	.nava {
+		display: none;
+	}
+	.nava-mobile {
+		top: 50px;
+		opacity: 1;
+	}
 }
