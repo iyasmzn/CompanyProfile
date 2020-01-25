@@ -79,7 +79,7 @@ p {
 	z-index: 100;
 	top: 0px!important;
 	width: 100%;
-	background: rgba(0,0,0,1);
+	background: rgba(0,0,0,0.8);
 	transition: top 1s!important;
 }
 .nava-abs {
