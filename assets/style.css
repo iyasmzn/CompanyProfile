@@ -246,7 +246,8 @@ p {
 	color: skyblue;
 }
 .work-box-hover {
-	border-radius: 5px;
+	border-radius: 15px;
+	overflow: hidden;
 	-webkit-transition: all 0.25s;
 	   -moz-transition: all 0.25s;
 	    -ms-transition: all 0.25s;
